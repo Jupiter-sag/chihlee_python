@@ -1,0 +1,9 @@
+#dictionary
+#key,map資料
+students={'chinsese':89,
+          'english':94,
+          'math':65,
+          'history':92,
+          'discover':95}
+print(students)
+print(students['math'])
