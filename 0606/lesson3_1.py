@@ -1,13 +1,14 @@
 import requests
-
+from requests import Response
 
 def main():
     # YouBike 2.0 即時資料的 JSON 檔案 URL
-    url = "https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json"
+    
+    url:str= "https://tcgbusfs.blob.core.windows.net/dotapp/youbike/v2/youbike_immediate.json"
+    response:Response= requests.get(url)
 
     # 向 API 發出 GET 請求
-    response = requests.get(url)
-    
+
 
     # 若 HTTP 回應狀態不是成功（2xx），則拋出例外
     response.raise_for_status()
