@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "matplotlib>=3.11.0",
+    "numpy>=2.4.6",
     "pandas>=3.0.3",
     "requests>=2.34.2",
 ]
@@ -13,4 +14,5 @@ dependencies = [
 [tool.uv.workspace]
 members = [
     "0523",
+    "0627",
 ]
